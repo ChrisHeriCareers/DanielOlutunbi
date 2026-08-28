@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      /* Sets the theme before the stylesheet paints, so the page
+         never flashes light then dark (or the reverse) on load.
+         This one small inline script is the standard, necessary
+         exception to keeping JS in its own file. */
+      (function () {
+        try {
+          var stored = localStorage.getItem("chrisheri-theme");
+          var theme =
+            stored ||
+            (window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (err) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Daniel Olutunbi | Career Positioning</title>
+    <meta
+      name="description"
+      content="CV, biography, and LinkedIn positioning at every career stage, from entry level to board level. Documents that show impact, not just duties."
+    />
+
+    <!-- Open Graph, controls how this page looks when shared on LinkedIn,
+         Facebook, Slack, and most messaging apps. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Daniel Olutunbi" />
+    <meta property="og:title" content="Daniel Olutunbi | Career Positioning" />
+    <meta
+      property="og:description"
+      content="CV, biography, and LinkedIn positioning at every career stage, from entry level to board level. Documents that show impact, not just duties."
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+
+    <!-- Twitter/X card, falls back to the Open Graph tags above for
+         anything not set here. -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Daniel Olutunbi | Career Positioning" />
+    <meta
+      name="twitter:description"
+      content="CV, biography, and LinkedIn positioning at every career stage, from entry level to board level."
+    />
+    <meta name="twitter:image" content="og-image.png" />
+
+    <!-- Structured data, helps search engines understand who this page
+         represents and what services are offered. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Daniel Olutunbi Career Positioning",
+        "url": "",
+        "email": "danielolutunbi.careers@gmail.com",
+        "founder": {
+          "@type": "Person",
+          "name": "Daniel Olutunbi"
+        },
+        "areaServed": ["US", "NL", "IT", "IE", "Europe"],
+        "serviceType": [
+          "CV and Resume Writing",
+          "Executive and Board Biography",
+          "LinkedIn Positioning",
+          "Career Branding and Strategy",
+          "Cover Letter Writing",
+          "Interview Preparation",
+          "Career Brand Audit",
+          "Founder and Speaker Biographies",
+          "Career Portfolio Website Building"
+        ]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header>
+      <nav class="nav">
+        <a class="brand" href="#top">
+          <span class="seal">D</span>
+          <span class="brand-text">
+            <span class="brand-name">Daniel Olutunbi</span>
+            <span class="brand-tag">Career Positioning</span>
+          </span>
+        </a>
+        <div class="nav-right">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+            aria-pressed="false"
+          >
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              ></path>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.742 13.045a8.088 8.088 0 0 1-2.077.273c-4.508 0-8.16-3.653-8.16-8.16 0-.712.092-1.403.264-2.06a.5.5 0 0 0-.643-.615A10.098 10.098 0 0 0 3.5 12.5C3.5 18.299 8.201 23 14 23a10.097 10.097 0 0 0 9.017-5.626.5.5 0 0 0-.615-.643 8.106 8.106 0 0 1-1.66.314z"
+              ></path>
+            </svg>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+          >
+            <span></span>
+          </button>
+          <ul class="nav-links" id="primary-nav">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Approach</a></li>
+            <li><a href="#whofor">Who I work with</a></li>
+            <li><a href="#about">How I work</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li class="nav-cta">
+              <a class="btn btn-fill" href="#contact">Start a conversation</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="wrap hero-grid">
+          <div class="hero-col">
+            <span class="eyebrow">CV &amp; Career Positioning</span>
+            <h1>
+              Written like a duty list. Not like the career it actually was.
+            </h1>
+            <p class="hero-sub">
+              I rewrite CVs, biographies, and LinkedIn profiles at every career
+              stage, from a first promotion to a first board seat, for people
+              whose documents describe their job, not their impact.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-fill" href="#contact">Start a conversation</a>
+              <a class="hero-link" href="#process">See how it works</a>
+            </div>
+          </div>
+          <div class="redline-card">
+            <span class="seal">D</span>
+            <span class="redline-label">One sentence, rewritten</span>
+            <p class="redline-line rl-before">
+              "Responsible for managing engineering staff and departmental
+              budget.<span class="strike"></span>"
+            </p>
+            <p class="redline-line rl-after">
+              "Built and led a 40-person engineering organization on a budget I
+              controlled end to end."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem">
+        <div class="wrap reveal">
+          <span class="eyebrow">Why this happens</span>
+          <p>
+            Most people are trained to describe their job, not their career.
+            Somewhere between the work and the document, ownership quietly turns
+            into duty. <strong>"Led" becomes "supported,"</strong> whether that
+            is a first team lead role or a global division. A number that would
+            close a room never makes it onto the page. None of this is a writing
+            problem. It is a translation problem, and it is fixable at any
+            stage.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">Before and after</span>
+            <h2>Same career, any stage. Full paragraph, not just a sentence.</h2>
+          </div>
+          <div class="carousel" data-carousel>
+            <div class="carousel-track">
+              <div class="carousel-slide is-active" data-slide>
+                <span class="rl-tag">Entry Level</span>
+                <p class="carousel-before">
+                  Assisted with customer inquiries and daily reporting tasks.
+                  Handled scheduling and supported the team with various
+                  administrative duties as needed.
+                </p>
+                <p class="carousel-after">
+                  Resolved an average of 40 customer inquiries a day, more
+                  than any other team member, and built the daily reporting
+                  template the team still uses. Took over scheduling for a
+                  six person team within two months of starting, without
+                  being asked.
+                </p>
+              </div>
+              <div class="carousel-slide" data-slide>
+                <span class="rl-tag">Mid-Career</span>
+                <p class="carousel-before">
+                  Responsible for plant operations across multiple sites.
+                  Worked with cross functional teams to help support
+                  production targets and quality standards.
+                </p>
+                <p class="carousel-after">
+                  Ran manufacturing operations across five plants in four
+                  countries, each with its own regulatory environment and
+                  labor market. Rebuilt the quality reporting process after
+                  a compliance gap was flagged, cutting audit findings in
+                  half within a year.
+                </p>
+              </div>
+              <div class="carousel-slide" data-slide>
+                <span class="rl-tag">Executive</span>
+                <p class="carousel-before">
+                  Contributed to product development and the technology
+                  roadmap. Worked closely with engineering and leadership to
+                  help guide strategic priorities.
+                </p>
+                <p class="carousel-after">
+                  Directed the technology roadmap for the product line
+                  carrying the business, over 60 percent of group revenue.
+                  Took the roadmap from an internal planning document to the
+                  reference point the board used to evaluate every major
+                  investment decision for three years.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-btn carousel-prev" type="button" aria-label="Previous example">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <div class="carousel-dots">
+                <button class="carousel-dot is-active" type="button" data-index="0" aria-label="Show entry level example" aria-current="true"></button>
+                <button class="carousel-dot" type="button" data-index="1" aria-label="Show mid career example" aria-current="false"></button>
+                <button class="carousel-dot" type="button" data-index="2" aria-label="Show executive example" aria-current="false"></button>
+              </div>
+              <button class="carousel-btn carousel-next" type="button" aria-label="Next example">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">Services</span>
+            <h2>Documents built for how senior careers actually move</h2>
+          </div>
+          <div class="services-grid">
+            <div class="service-card reveal">
+              <span class="service-num">01</span>
+              <h3>CV &amp; Resume</h3>
+              <p>
+                A ground up rewrite built around what you actually did, whatever
+                stage that is: a first internal promotion or a next board seat.
+              </p>
+            </div>
+            <div class="service-card reveal">
+              <span class="service-num">02</span>
+              <h3>Executive &amp; Board Biography</h3>
+              <p>
+                A standalone document for introductions, boards, and rooms where
+                a CV is not the right format.
+              </p>
+            </div>
+            <div class="service-card reveal">
+              <span class="service-num">03</span>
+              <h3>LinkedIn Positioning</h3>
+              <p>
+                Your profile rewritten to match the document, not the other way
+                round.
+              </p>
+            </div>
+            <div class="service-card reveal">
+              <span class="service-num">04</span>
+              <h3>Career Branding &amp; Strategy</h3>
+              <p>
+                Working sessions to define how you talk about the move you are
+                making next, before a single line gets written.
+              </p>
+            </div>
+            <div class="service-card reveal">
+              <span class="service-num">05</span>
+              <h3>Cover Letter Writing</h3>
+              <p>
+                A letter that gives a reason to read the CV, not a repeat of
+                it. Written for the specific role, not recycled from the last
+                one.
+              </p>
+            </div>
+            <div class="service-card reveal">
+              <span class="service-num">06</span>
+              <h3>Interview Preparation</h3>
+              <p>
+                A working session translating what is on the page into how
+                you would actually talk about it in the room, once the CV is
+                done.
+              </p>
+            </div>
+            <div class="service-card reveal">
+              <span class="service-num">07</span>
+              <h3>Career Brand Audit</h3>
+              <p>
+                A written diagnostic of your current CV, LinkedIn, and
+                biography: what is working, what is not, and what to fix
+                first, before committing to a full rewrite.
+              </p>
+            </div>
+            <div class="service-card reveal">
+              <span class="service-num">08</span>
+              <h3>Founder &amp; Speaker Bios</h3>
+              <p>
+                A biography built for a different room: investors, conference
+                organizers, panel moderators. Same standard of accuracy, a
+                different audience.
+              </p>
+            </div>
+            <div class="service-card service-card-wide reveal">
+              <span class="service-num">09</span>
+              <h3>Career Portfolio Websites</h3>
+              <p>
+                A personal site built around the same material as your CV,
+                with the resume available to download directly from the
+                page. Contact details, a case study or project section where
+                relevant, and any other section that fits your story can be
+                built in, all fully responsive on mobile.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process" id="process">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">How it works</span>
+            <h2>Four steps, in this order</h2>
+          </div>
+          <div class="process-grid">
+            <div class="process-step reveal">
+              <span class="process-num">01</span>
+              <h3>Conversation</h3>
+              <p>
+                A working session to understand the role, the scope, and where
+                the current materials undersell it.
+              </p>
+              <span class="process-time">About an hour</span>
+            </div>
+            <div class="process-step reveal">
+              <span class="process-num">02</span>
+              <h3>Draft</h3>
+              <p>
+                A full rewrite, built around the facts and figures that carry
+                the most weight for the level you are targeting.
+              </p>
+              <span class="process-time">3 to 5 business days</span>
+            </div>
+            <div class="process-step reveal">
+              <span class="process-num">03</span>
+              <h3>Refine</h3>
+              <p>
+                We work through the draft together until the language and the
+                career finally match.
+              </p>
+              <span class="process-time">Usually one or two rounds</span>
+            </div>
+            <div class="process-step reveal">
+              <span class="process-num">04</span>
+              <h3>Deliver</h3>
+              <p>
+                Final documents, formatted and ready to use, with guidance on
+                where to use them first.
+              </p>
+              <span class="process-time">Same day, once approved</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="whofor">
+        <div class="wrap whofor-grid">
+          <div class="reveal">
+            <span class="eyebrow">Who this is for</span>
+            <h2>Careers at the point of a real decision</h2>
+          </div>
+          <ul class="whofor-list reveal">
+            <li>
+              <span class="mk">01</span> Early career professionals whose first
+              CV still reads like a job description rather than a track record.
+            </li>
+            <li>
+              <span class="mk">02</span> Directors and VPs preparing for the
+              next step up.
+            </li>
+            <li>
+              <span class="mk">03</span> Senior operators moving from functional
+              leadership into enterprise level roles.
+            </li>
+            <li>
+              <span class="mk">04</span> Professionals exploring a first board
+              or advisory seat, where an operational CV has to be reframed
+              around governance rather than delivery.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="wrap">
+          <div class="about-block reveal">
+            <span class="eyebrow">About</span>
+            <p>
+              I work with senior leaders and executives across the US, the
+              Netherlands, Italy, Ireland, and other countries across Europe,
+              helping them turn a career's worth of impact into a document
+              that actually reads like it. That work has spanned medical
+              device and diagnostics, fintech, pharma, finance, oil and gas,
+              engineering, and technology, industries with little in common
+              except how easily a real track record gets flattened into a
+              duty list.
+            </p>
+          </div>
+          <div class="about-block reveal">
+            <span class="eyebrow">How I work</span>
+            <h2>Nothing goes in that will not hold up</h2>
+            <p>
+              Every draft starts from what you actually did, not from a template
+              of what the role is supposed to sound like. If a claim does not hold
+              up under its own math, I will say so and ask for the real number
+              rather than let it slide through. If two roles on your timeline
+              overlap in a way a reader would question, I will ask before a
+              recruiter does. The result reads like you, at your most precise, not
+              like a rewritten version of someone else's CV with your name on it.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="discretion">
+        <div class="wrap reveal">
+          <span class="eyebrow">A note on discretion</span>
+          <blockquote>
+            Career conversations are rarely simple. Most of this work happens
+            while people are still employed, still deciding, still figuring out
+            what they actually want next. Everything discussed stays between us.
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">Questions</span>
+            <h2>What people usually ask before reaching out</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Do you work with people outside the US?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. Past work has spanned medical device, fintech,
+                    pharma, finance, and oil and gas, across the US, Europe,
+                    and beyond. Time zones are rarely the obstacle people
+                    expect them to be.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can you help if I am not actively job searching?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. Some of the strongest work happens before someone
+                    starts looking, when a CV, biography, or LinkedIn profile
+                    needs to be ready before an opportunity appears, not
+                    scrambled together after.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What if my CV has already been professionally written?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap">
+                <div class="faq-answer-inner">
+                  <p>
+                    That happens often. Most rewrites still describe the job
+                    rather than the impact. If yours already reads like your
+                    actual career, I will tell you that directly rather than
+                    rewriting something that does not need it.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How is this different from a resume mill or a LinkedIn coach?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap">
+                <div class="faq-answer-inner">
+                  <p>
+                    Volume services match you with a writer and a template. I
+                    read the actual material, ask about the parts that do not
+                    add up, and do not let a claim go in that would not hold
+                    up under a recruiter's second look.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What if I do not know what I want next?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap">
+                <div class="faq-answer-inner">
+                  <p>
+                    That is normal, and often the more honest starting point.
+                    The first conversation is where that gets worked out, not
+                    something you need to have solved before reaching out.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Do you guarantee interviews or job offers?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap">
+                <div class="faq-answer-inner">
+                  <p>
+                    No, and anyone who does is telling you what you want to
+                    hear. What I can guarantee is a document that represents
+                    your career accurately and makes the case for it clearly.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How much of my time does this take?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap">
+                <div class="faq-answer-inner">
+                  <p>
+                    One working conversation, a draft to react to, and however
+                    many rounds of refinement it takes to get it right. Most
+                    people spend less time on this than they expect.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do revisions work?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap">
+                <div class="faq-answer-inner">
+                  <p>
+                    We work through the draft together until it is right for
+                    you, however many rounds that takes. Revisions have
+                    typically wrapped up within a week of the first draft,
+                    though every engagement is different.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="wrap contact-inner reveal">
+          <h2>Start with a conversation, not a commitment.</h2>
+          <div class="contact-right">
+            <p>
+              Tell me what you are working toward and where the current
+              materials fall short. I will tell you plainly whether I can help,
+              and what that would involve.
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <span class="contact-method-label">Contact</span>
+                <button
+                  class="contact-link"
+                  type="button"
+                  data-copy="danielolutunbi.careers@gmail.com"
+                >
+                  danielolutunbi.careers@gmail.com
+                </button>
+                <span class="copy-note">Copied</span>
+              </div>
+              <div class="contact-method">
+                <span class="contact-method-label">Direct</span>
+                <a class="contact-email" href="mailto:danielolutunbi.careers@gmail.com"
+                  >danielolutunbi.careers@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap footer-inner">
+        <div class="footer-brand">
+          <span class="seal">D</span>
+          <span class="brand-name">Daniel Olutunbi</span>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Approach</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="footer-fine">
+          &copy; <span id="year"></span> Daniel Olutunbi
+        </p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
